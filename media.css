@@ -1,0 +1,22 @@
+
+/* Hide menu initially on small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        height: 100vh;
+        width: 200px;
+        background-color: #2e7d32; 
+        padding: 2rem 1rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .hamburger {
+    display: flex;
+    }
+  
+}
