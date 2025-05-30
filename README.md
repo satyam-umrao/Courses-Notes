@@ -51,8 +51,9 @@ This repo contains notes categorized by subject or course. Each folder represent
 Contributions for new subjects, corrections, and enhancements are welcome!
 
 📬 Contact
-Feel free to reach out for suggestions, collaborations, or questions:
-Satyam Umrao
-📧 [Email](satyamumrao@outlook.com)
-🌐 [Github](https://satyam-umrao.github.io/](https://github.com/satyam-umrao))
+Feel free to reach out for suggestions, collaborations, or questions: <br>
+Satyam Umrao <br>
+📧 Email: [satyamumrao@outlook.com] <br>
+🌐 GitHub: @satyam-umrao
 
+<hr>
