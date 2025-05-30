@@ -54,5 +54,5 @@ Contributions for new subjects, corrections, and enhancements are welcome!
 Feel free to reach out for suggestions, collaborations, or questions:
 Satyam Umrao
 📧 [Email](satyamumrao@outlook.com)
-🌐 [Github](https://satyam-umrao.github.io/)
+🌐 [Github](https://satyam-umrao.github.io/](https://github.com/satyam-umrao))
 
