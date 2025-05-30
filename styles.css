@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #161b22;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e4f7e4;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #2f8d46;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Articles Section */
+.articles {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.articles h2 {
+  margin-bottom: 1rem;
+  color: #2f8d46;
+}
+
+.article-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.article-card h3 {
+  color: #2f8d46;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #2f8d46;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+a#ss{
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*  */
+
+.notes-section {
+  padding: 1rem;
+  background-color: #0d1117;
+  color: white;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.note-card {
+  background-color: #161b22;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  border: 0.5px solid rgba(255, 255, 255, 0.227);
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+}
+
+.note-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.note-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.note-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #21262d;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #30363d;
+}
+
+.btn:hover {
+  background-color: #2ea043;
+  color: white;
+}
+/* Navbar */
+header {
+  background-color: #2f8d46;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2e7d32;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links.show {
+  transform: translateX(0%);
+}
+
+.nav-links a {
+  padding: 1rem 0;
+  color: white;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+/* loader
+ */
+
+ /* Preloader Styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.preloader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preloader-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.preloader-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #2e7d32; 
+}
+
+/* Spinner */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #2e7d32;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide Preloader */
+#preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
