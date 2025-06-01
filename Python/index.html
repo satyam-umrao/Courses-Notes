@@ -1,0 +1,577 @@
+<!DOCTYPE html >
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/166477/isolated/lists/9bb722f0e85ddbc1ce0f064534fd2311-python-programming-language-icon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://images.vexels.com/media/users/3/166477/isolated/lists/9bb722f0e85ddbc1ce0f064534fd2311-python-programming-language-icon.png" alt="">
+      Python Notes
+      </div>
+
+    <div id="head">
+      <button class="ham-open"   onclick="openMenu()">▥</button>
+      <button class="ham-close" onclick="closeMenu()">x</button>
+      <button class="home-btn" onclick="window.location.href='index.html'">Go to Home</button>
+      <button class="toggle-btn" onclick="toggleTheme()">𖤓</button>
+      <button class="export-btn" onclick="exportToPDF()">📝</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="topics">
+      <ul>
+        <li onclick="showSummary(1)">Introduction to python</li>
+        <li onclick="showSummary(2)">DataTypes</li>
+        <li onclick="showSummary(3)">Operators in Python</li>
+        <li onclick="showSummary(4)">I & O in python</li>
+        <li onclick="showSummary(5)">Control flow statements</li>
+        <li onclick="showSummary(6)">LOOPING Statement in Python</li>
+        <li onclick="showSummary(7)">Strings in Python</li>
+        <li onclick="showSummary(8)">Title 8</li>
+        <li onclick="showSummary(9)">Title 9</li>
+        <li onclick="showSummary(10)">Title 10</li>
+        <li onclick="showSummary(11)">Title 11</li>
+        <li onclick="showSummary(12)">Title 12</li>
+        <li onclick="showSummary(13)">Title 13</li>
+        <li onclick="showSummary(14)">Title 14</li>
+        <li onclick="showSummary(15)">Important Programs in Python</li>
+      </ul>
+    </div>
+
+    <!-- summary container start -->
+    <div class="summary" id="summaryContainer" >
+
+      <!-- summary-1 -->
+      <div id="summary-1" class="active" ><br>
+        <u> <h2>Introduction to python</h2></u>
+        <h3>What is Python?</h3>
+        <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+        <p>It is used for:</p>
+        <ul>
+          <strong>
+          <li>web development (server-side),</li>
+          <li>software development</li>
+          <li>mathematics</li>
+          <li>system scripting</li>
+          </strong>
+        </ul>
+        
+        <b><u>Summary :</u></b>
+        <ul>
+          <strong>
+            <li>General-purpose, high-level, interpreted language.</li>
+            <li>Supports both object-oriented and functional programming.</li>
+            <li>Created by Guido van Rossum in 1991.</li>
+          </strong>
+        </ul>
+
+        <h3><b> Python Versions</b></h3>
+           <ul>
+          <strong>
+            <li>Python 1.0 – 1994</li>
+            <li>Python 2.0 – 2000</li>
+            <li>Python 3.0 – 2008 (not backward compatible with 2.x)</li>
+          </strong>
+        </ul>
+
+           <h3><b> Features of Python</b></h3>
+           <ul>
+          <strong>
+            <li>Simple & easy to read/write</li>
+            <li>Open Source & Portable</li>
+            <li>Platform Independent</li>
+            <li>Large Library Support (e.g., NumPy, Pandas)</li>
+            <li>Database connectivity (MySQL, Oracle)</li>
+            <li>Used in AI, ML, IoT, Web, Automation</li>
+          </strong>
+        </ul>
+
+        <h3><b>Applications of Python</b></h3>
+        <ul>
+          <strong>
+            <li>Web apps: (e.g., Django, Flask)</li>
+            <li>GUI apps: (e.g., Tkinter, PyQt)</li>
+            <li>Data Science: (e.g., NumPy, Pandas)</li>
+            <li>AI/ML: (e.g., Scikit-learn, TensorFlow)</li>
+            <li>Console Apps, Business Apps, CAD, Image Processing</li>
+          </strong>
+        </ul>
+
+          <h3><b>Python Flavors</b></h3>
+        <ul>
+          <strong>
+            <li>cpython: Standard Python</li>
+            <li>jython: Python for Java</li>
+            <li>ironpython: Python for .NET</li>
+            <li>anaconda: Data Science-based distribution</li>
+            <li>pypy: Fast execution using JIT compiler</li>
+          </strong>
+        </ul>
+
+        <h3><b>Keywords in Python</b></h3>
+        <p>Reserved words like:if,else,for,True,False, None,etc.</p>
+        <div class="image_b"><img src="images/img-1.png" alt=""></div>
+
+
+        <h3><u>First Python Code :</u></h3>
+        <div class="image_b"><img src="images/img-2.png" alt=""></div>
+        <ul>
+          <li><p>Save file as -- ".py"</p></li>
+          <li><p>Run in terminal: <br>
+                  ---python filename.py</p></li>
+        </ul>
+
+
+        <h3>Python Execution Flow</h3>
+        <ul>
+          <li>Code is written in .py</li>
+          <li>Compiler converts it to bytecode (__pycache__)</li>
+          <li>Python Virtual Machine (PVM) executes bytecode using an interpreter</li>
+        </ul>
+        <h3>✅ Compile Manually:</h3>
+        <div class="image_b"><img src="images/img-3.png" alt=""></div>
+
+        <h3><b>Interactive Mode</b></h3>
+        <h4>Type python in terminal to enter interactive mode</h4>
+        <div class="image_b"><img src="images/img-4.png" alt=""></div>
+
+        <h2><p>Python IDLE</p></h2>
+        <ul>
+          <li>Built-in editor with both script and interactive mode.</li>
+          <li>Run Python code easily from here.</li>
+        </ul>
+
+      </div>
+
+
+      <!-- summary-2 -->
+      <div id="summary-2">
+        <h2>Data Types in Python</h2>
+        <h4>Python has several built-in data types that can be used to classify and categorize data items. These data types determine what operations can be performed on a particular piece of data.</h4>
+        <h4>Python supports various built-in and user-defined data types.</h4>
+        <u><p style="justify-content: center;">Built-in Data Types</p></u>
+
+        <u><p>Numeric Types:</p></u>
+        <ul>
+          <li><strong>int:</strong> Represents whole numbers <br> (e.g., 1, 2, 3, -1, 0).</li><br>
+          <li><strong>float:</strong>Represents real numbers with decimal points  <br>(e.g., 1.2, 3.14, -0.5).</li><br>
+          <li><strong>complex:</strong>Represents complex numbers with a real and imaginary part <br> (e.g., 1 + 2j).</li>
+        </ul>
+
+        <u><p>Sequence Types:</p></u>
+        <ul>
+          <li><strong>str:</strong>Represents text data <br> (e.g., "hello", "world").</li><br>
+          <li><strong>list:</strong> An ordered, mutable sequence of items <br> (e.g., \[1, 2, "apple"]).
+          </li><br>
+          <li><strong>tuple:</strong>An ordered, immutable sequence of items <br>(e.g., (1, 2, "apple")).</li><br>
+          <li><strong>range:</strong>Represents a sequence of numbers.</li>
+        </ul>
+
+        <u><p>Mapping Type:</p></u>
+        <ul>
+          <li>
+            <strong>dict:</strong>Represents a collection of key-value pairs <br> (e.g., {"name": "John", "age": 30}).
+          </li>
+        </ul>
+
+        <u><p>Set Types:</p></u>
+        <ul>
+          <li><strong>set:</strong>An unordered collection of unique items <br> (e.g., {1, 2, 3}).</li><br>
+          <li><strong>frozenset:</strong>An immutable set.</li>
+        </ul>
+
+        <u><p>Boolean Type:</p></u>
+        <ul>
+          <li>
+            <strong>bool:</strong> Represents either True or False.
+          </li>
+        </ul>
+
+        <u><p>Binary Types:</p></u>
+        <ul>
+          <li><strong>bytes:</strong> Represents a sequence of single bytes.</li>
+          <li><strong>bytearray:</strong> A mutable sequence of bytes.</li>
+          <li><strong>memoryview:</strong> Provides a view of memory without copying.</li>
+        </ul>
+
+        <h4>Python also provides the ability to cast data types from one to another, such as converting an integer to a float. The type() function can be used to determine the data type of a variable. Additionally, Python has specialized data types such as dates, times, and arrays.</h4>
+
+
+        <u><p style="justify-content: center;">User-defined Data Types</p></u>
+        <p>Created using classes, arrays, and modules.</p>
+        
+
+        <h3>Type Checking:</h3>
+        <p>Use type() function to check the type of a variable.</p>
+        <div class="image_b"><img src="images/img-5.png" alt=""></div>
+
+      </div>
+
+      <!-- summary-3 -->
+       <div id="summary-3">
+        <h2> Operators in Python</h2>
+        <h4>Operators are special symbols in Python that carry out specific operations on values and variables, referred to as operands. These operators are essential for performing various tasks, including arithmetic calculations, comparisons, logical evaluations, and bitwise manipulations.</h4>
+ 
+          <u><p style="justify-content: center;">Types of Operators</p></u>
+          <u><p>Arithmetic Operators:</p></u>
+          <li style="list-style: none;">The operators which are used to perform arithmetic operations like addition, subtraction, division etc.</li>
+          <ul>
+            <li>( + )  Addition</li>
+            <li>( - )  Subtraction</li>
+            <li>( * )  Multiplication</li>
+            <li>( / )  Division</li>
+            <li>( % )  Modulo - remainder of a division</li>
+            <li>( // )  Floor division - integer part of the division</li>
+            <li>( ** )  Exponentiation</li>
+          </ul>
+           <div class="image_b"><img src="images/img-6.png" alt=""></div>
+
+          <u><p>Assignment Operators:</p></u>
+          <li style="list-style: none;">The operators which are used for assigning values to variables. "=" is the assignment operator.</li>
+          <ul>
+            <li>( =  )  assign</li>
+            <li>( += )  add and assign</li>
+            <li>( -= )  subtract and assign</li>
+            <li>( *= )  multiply and assign</li>
+            <li>( /= )  divide and assign</li>
+            <li>( %= )  modulo and assign</li>
+            <li>( //=)  floor divide and assign</li>
+            <li>( **=)  exponentiate and assign</li>
+          </ul>
+          <div class="image_b"><img src="images/img-7.png" alt=""></div>
+
+          <u><p>Comparison Operators:</p></u>
+          <li style="list-style: none;">These compare values.</li>
+          <ul>
+            <li>( == )  equal</li>
+            <li>( != )  not equal</li>
+            <li>( >  )  greater than</li>
+            <li>( <  )  less than</li>
+            <li>( >= )  greater than or equal to</li>
+            <li>( <= )  less than or equal to</li>
+          </ul>
+          <div class="image_b"><img src="images/img-8.png" alt=""></div>
+          
+          <u><p>Logical Operators:</p></u>
+          <li style="list-style: none;">These perform logical operations.</li>
+          <ul>
+            <li>( and )  logical AND</li>
+            <li>( or  )  logical OR</li>
+            <li>( not )  logical NOT</li>
+          </ul>
+          <div class="image_b"><img src="images/img-9.png" alt=""></div>
+          
+          <u><p>Bitwise Operators:</p></u>
+          <li style="list-style: none;">These operate on individual bits.</li>
+          <ul>
+            <li>( &  )  bitwise AND</li>
+            <li>( |  )  bitwise OR</li>
+            <li>( ^  )  bitwise XOR</li>
+            <li>( ~  )  bitwise NOT</li>
+            <li>( << )  left shift</li>
+            <li>( >> )  right shift</li>
+          </ul>
+          <div class="image_b"><img src="images/img-10.png" alt=""></div>
+          
+          <u><p>Identity Operators:</p></u>
+          <li style="list-style: none;">These check if two operands refer to the same object in memory.</li>
+          <ul>
+            <li>( is     )  is the same object</li>
+            <li>( is not )  is not the same object</li>
+          </ul>
+          <div class="image_b"><img src="images/img-11.png" alt=""></div>
+          
+          <u><p>Membership Operators:</p></u>
+          <li style="list-style: none;">These test if a sequence is present in an object.</li>
+          <ul>
+            <li>( in     )  is present</li>
+            <li>( not in )  is not present</li>
+          </ul>
+          <div class="image_b"><img src="images/img-12.png" alt=""></div>
+
+          
+      </div>
+
+
+      
+
+      <!-- summary-4 -->
+       <div id="summary-4">
+      <u><h2>Input and Output in Python</h2></u>
+      <p><u>Methods :</u></p>
+      <ul>
+        <li>Convert from String to type into other types</li>
+        <li>eval() function</li>
+        <li>Command-line arguments</li>
+        <li>IndexError</li>
+        <li>Len() function</li>
+      </ul>
+
+      <h2>Some important codes</h2>
+
+      <p>1. <u>Input Method in Python</u></p>
+      <div class="image_b"><img src="images/img-13.png" alt=""></div>
+
+     <p>2. <u>Checking return type of input() method in python</u></p>
+      <div class="image_b"><img src="images/img-14.png" alt=""></div>
+
+      <p>3. <u>Checking return type of input() method in python</u></p>
+      <div class="image_b"><img src="images/img-15.png" alt=""></div>
+
+      <p>4. <u>Converting string type to int() in Python</u></p>
+      <div class="image_b"><img src="images/img-16.png" alt=""></div>
+
+      <p>5. <u>Converting string type to float() in Python</u></p>
+      <div class="image_b"><img src="images/img-17.png" alt=""></div>
+
+      <p>6. <u>Taking int value at run time in Python</u></p>
+      <div class="image_b"><img src="images/img-18.png" alt=""></div>
+
+      <p>7. <u>Taking int value and print their sum in Python</u></p>
+      <div class="image_b"><img src="images/img-19.png" alt=""></div>
+
+      </div>
+
+
+      <!-- summary-5 -->
+       <div id="summary-5">
+      <u><h2>Control flow Statement</h2></u>
+      <p>Types Of Control Flow Statement</p>
+   <i> <ul>
+        <li>Sequential flow</li>
+        <li>Conditional flow</li>
+        <li>Looping flow</li>
+      </ul></i>  
+
+      <u><h2>Control flow Statement Graph</h2></u>
+      <div class="image_b"><img src="images/img-20.png" alt=""></div>
+
+      <h3><u><b><i>SEQUENTIAL STATEMENTS IN PYTHON:</b></u></h3>
+      <p>In this type of execution flow, the statements are executed one after the other sequentially. By using sequential statements, we can develop simple programs.sequential statements are executed line by line.</i></p>
+
+      <p><u><i>Sequential statements (demo1.py)</i></u></p>
+      <div class="image_b"><img src="images/img-21.png" alt=""></div>
+
+      <h3><u><b>CONDITIONAL STATEMENTS IN PYTHON</b></u></h3>
+      <p><i>Conditional: Statements are executed based on the condition. As shown above in the flow graph, if the condition is true then one set of statements are executed, and if false then the other set. Conditional statements are used much in complex programs.</i></p>
+
+      <p><b><i>There are three types of conditional statements in python. They are as follows:</i></b></p>
+     <i><ul>
+        <li>if statement</li>
+        <li>if-else statement</li>
+        <li>if elif else statement</li>
+      </ul></i> <br>
+
+      <li style="list-style: circle;"><b><u>if statement in python:</u></b></li>
+      <li style="list-style: none;"><p><i>The if statement contains an expression/condition. As per the syntax colon (:) is mandatory otherwise it throws a syntax error. The condition gives the result as a bool type, either True or False. If the condition result is True, then if block statements will be executed. If the condition result is False, then if block statements won‟t execute.</i></p></li>
+      <u>Example :-</u>
+      <div class="image_b"><img src="images/img-22.png" alt=""></div><br>
+
+
+      <li style="list-style: circle;"><b><u>if-else statement in python:</u></b></li>
+      <li style="list-style: none;"><p><i>The if statement contains an expression/condition.The condition gives the result as bool type, which means either True or False. If the condition result is True, then if block statements will be executed. If the condition result is False, then else block statements will be executed.</i></p></li>
+      <u>Example :-</u>
+      <div class="image_b"><img src="images/img-23.png" alt=""></div><br>
+
+      
+      <li style="list-style: circle;"><b><u>if...elif...else statement:</u></b></li>
+      <li style="list-style: none;"><p><i>The if statement contains an expression/condition.The condition gives the result as bool type, which means either True or False. The conditions are evaluated in the order written. If one condition becomes True then the set of statements associated with that particular condition are executed and the execution comes out without checking other conditions.</i></p></li>
+      <u>Example :-</u>
+      <div class="image_b"><img src="images/img-24.png" alt=""></div>
+
+       </div>
+ 
+
+      <!-- summary-6 -->
+       <div id="summary-6">
+      <u><h2>LOOPING (Iterations) Statement in Python</h2></u>
+      <p>If we want to execute a group of statements multiple times, then we should go for a looping kind of execution. There are two types of loops available in python.</p>
+      
+      <strong>
+        <li>while loop</li>
+        <li>for loop</li>
+      </strong>
+
+     <u><h2>For Loops</h2></u>
+     <li style="list-style: none;"><p>For loops are typically used to iterate over a sequence (such as a list, tuple, string, or range) or other iterable objects. The loop executes once for each item in the sequence.</p></li>
+     <u><b>Example :</b></u>
+     <div class="image_b"><img src="images/img-25.png" alt=""></div>
+
+
+       <u><h2>While Loops</h2></u>
+     <li style="list-style: none;"><p>While loops repeatedly execute a block of code as long as a condition is true.</p></li>
+     <u><b>Example :</b></u>
+     <div class="image_b"><img src="images/img-26.png" alt=""></div>
+
+     <u><h2>Loop Control Statements</h2></u>
+     <li><strong>break:</strong>Terminates the loop prematurely.</li>
+     <li><strong>continue:</strong>Skips the rest of the code inside the loop for the current iteration and moves to the next iteration.</li>
+     <li><strong>pass: </strong> Does nothing, often used as a placeholder.</li><br>
+     <u><b>Example :</b></u>
+     <div class="image_b"><img src="images/img-27.png" alt=""></div>
+
+
+     <u><h2>Nested Loops</h2></u>
+     <p>Loops can be nested inside other loops. The inner loop executes completely for each iteration of the outer loop. </p>
+     <u><b>Example :</b></u>
+     <div class="image_b"><img src="images/img-28.png" alt=""></div>
+
+
+     <u><h2>Looping with else</h2></u>
+     <p>Python for and while loops can have an else clause. The else block executes when the loop finishes normally (i.e., not terminated by a break statement). </p>
+     <u><b>Example :</b></u>
+     <div class="image_b"><img src="images/img-29.png" alt=""></div>
+
+       </div>
+ 
+
+      <!-- summary-7 -->
+       <div id="summary-7">
+      <u><h2>Strings in Python</h2></u>
+      <h3><b><u>Introduction to Strings in Python :-</u></b></h3>
+      <p>A string is a sequence of characters enclosed in single ('), double ("), or triple (''' or """) quotes.Triple quotes are used for multi-line strings.</p> 
+      <h3><u>String Creation & Examples</u></h3>
+      <li>Strings can include single or double quotes within them.</li>
+      <li>An empty string is created using "".</li>
+
+      <h3><u>Accessing String Characters</u></h3>
+      <li>Characters in strings can be accessed using:</li><br>
+      <li><strong>indexing:</strong></li>
+      <ul>
+        <li>Positive (left to right, starting at 0)</li>
+        <li>Negative (right to left, starting at -1)</li>
+      </ul>
+      <li><strong>slicing : </strong>Extracting a substring using string[start:end:step].</li>
+
+     <h3><u>String Immutability</u></h3>
+     <li>Strings in Python are immutable (cannot be modified after creation).</li>
+
+     <h3><u>String Operations</u></h3>
+     <li><strong>Concatenation (+) :</strong> Combines strings.</li>
+     <li><strong>Repetition (*) :</strong> Repeats a string multiple times.</li>
+     <li><strong>Length (len()) :</strong> Returns number of characters in the string.</li>
+
+     <h3><u>Membership Operators</u></h3>
+     <li>in and not in are used to check if a substring exists within a string.</li>
+
+     <h3><u>Comparison Operators</u></h3>
+     <li>Strings can be compared using ==, !=, <, >, etc., based on dictionary order.</li>
+
+     <h3><u>Whitespace Handling</u></h3>
+     <li>strip(), lstrip(), rstrip() remove spaces from ends of a string.</li>
+
+     <h3><u>Substring Operations</u></h3>
+     <li><strong>find() / index() –</strong>Find substring (returns index or error). </li>
+     <li><strong>rfind() / rindex() –</strong> Same as above, but search from end. </li>
+     <li><strong>count() –</strong> Counts number of occurrences. </li>
+     <li><strong>replace() –</strong> Replaces part of a string with another (creates a new string).</li>
+
+     <h3><u>Splitting and Joining Strings</u></h3>
+     <li><strong>split() – </strong>Splits a string into a list using a separator. </li>
+     <li><strong>join() – </strong> Joins a list/tuple of strings into one string using a separator.</li>
+
+     <h3><u>Changing String Case</u></h3>
+     <li><strong>upper(), lower(), swapcase(), title(), capitalize() –</strong> Modify case of characters.</li>
+
+     <h3><u>String Formatting</u></h3>
+     <li><strong>format() with {} </strong> or numbered/named placeholders is used to insert variables into strings.</li>
+
+     <h3><u>Character Data Type</u></h3>
+     <li>No separate <strong>char </strong>type in Python; a single character is treated as a string of length 1.
+     </li><br>
+
+
+     <h2><u><b>| Some Importan Programs |</b></u></h2>
+
+     <p><b>1. Creating and Printing Strings</b></p>
+     <div class="image_b"><img src="images/img-30.png" alt=""></div>
+
+     <p><b>2. Multi-line Strings</b></p>
+     <div class="image_b"><img src="images/img-31.png" alt=""></div>
+
+     <p><b>3. Quotes Inside Strings</b></p>
+     <div class="image_b"><img src="images/img-32.png" alt=""></div>
+
+     <p><b>4. Empty String</b></p>
+     <div class="image_b"><img src="images/img-33.png" alt=""></div>
+
+     <p><b>5. Accessing Characters (Indexing)</b></p>
+     <div class="image_b"><img src="images/img-34.png" alt=""></div>
+
+     <p><b>6. Loop Through String</b></p>
+     <div class="image_b"><img src="images/img-35.png" alt=""></div>
+
+     <p><b>7. Slicing Strings</b></p>
+     <div class="image_b"><img src="images/img-36.png" alt=""></div>
+
+     <p><b>8. Immutability of Strings</b></p>
+     <div class="image_b"><img src="images/img-37.png" alt=""></div>
+
+     <p><b>9. String Concatenation and Repetition</b></p>
+     <div class="image_b"><img src="images/img-38.png" alt=""></div>
+
+     <p><b>10. Length of String</b></p>
+     <div class="image_b"><img src="images/img-39.png" alt=""></div>
+
+     <p><b>11. Membership Operators</b></p>
+     <div class="image_b"><img src="images/img-40.png" alt=""></div>
+
+     <p><b>12. Comparing Strings</b></p>
+     <div class="image_b"><img src="images/img-41.png" alt=""></div>
+
+     <p><b>13. Removing Spaces</b></p>
+     <div class="image_b"><img src="images/img-42.png" alt=""></div>
+
+     <p><b>14. Finding Substrings</b></p>
+     <div class="image_b"><img src="images/img-43.png" alt=""></div>
+
+     <p><b>15. Counting Substrings</b></p>
+     <div class="image_b"><img src="images/img-45.png" alt=""></div>
+
+     <p><b>16. Replacing Strings</b></p>
+     <div class="image_b"><img src="images/img-46.png" alt=""></div>
+
+     <p><b>17. Splitting Strings</b></p>
+     <div class="image_b"><img src="images/img-47.png" alt=""></div>
+
+     <p><b>18. Joining Strings</b></p>
+     <div class="image_b"><img src="images/img-48.png" alt=""></div>
+
+     <p><b>19. Changing Case</b></p>
+     <div class="image_b"><img src="images/img-49.png" alt=""></div>
+
+     <p><b>20. Formatting Strings</b></p>
+     <div class="image_b"><img src="images/img-50.png" alt=""></div>
+
+     <p><b>21. Character Data Type</b></p>
+     <div class="image_b"><img src="images/img-51.png" alt=""></div>
+
+
+
+       </div>
+
+
+    </div>
+    <!-- summary container-end -->
+
+  </div>
+
+  <!-- footer -->
+
+  <footer>
+    <strong>Developed by Satyam • View on •</strong><a href="https://github.com/your-username/your-repo" target="_blank"> My Repository</a>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
