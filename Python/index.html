@@ -688,12 +688,81 @@ def name_of_function(par1,par2,..);
 
        </div>
 
+
+      <!-- summary 10 -->
+         <div id="summary-10">
+
+          <h2>Lists in Python</h2>
+          <p>In Python, a list is a versatile and commonly used data structure that allows you to store a collection of items. Lists are ordered, mutable, allow duplicates, and can store heterogeneous data types. Lists are part of the core Python data structures and provide a wide range of operations to manipulate stored elements effectively.</p>
+
+          <li>Lists are enclosed in square brackets <code>[]</code> and elements are separated by commas. </li>
+          <li>They are ideal when you need a container to hold multiple related values and need to modify the contents later.</li> 
+          <li>Lists can be used to store strings, numbers, booleans, objects, or even other lists (nested lists).</li>
+
+          <h4><u>Creating a list in Python :-</u></h4>
+
+          <p>We can create a list in python by using square brackets ‘[ ]'. The elements in the list should be comma-separated.</p>
+          <p><strong>Example: </strong>Creating an empty list</p>
+             <div id="image_b"><img src="images/img-64.png" alt=""></div>
+          <p>Example: Creating a list with elements</p>
+             <div id="image_b"><img src="images/img-65.png" alt=""></div>
+
+             <h2><u>Creating a List:</u></h2>
+             <li><b>Using list() function:</b> <code>l = list(range(0, 10))</code></li>
+             <li><b>Using square brackets:</b> <code>names = ["Mohan", 10, True]</code></li>
+<li style="list-style: none; margin-top: 10px;"><b>The list() function is often used to convert other iterable data types like tuples, strings, or ranges into lists.</b></li>
+
+<h2 style="margin: 25px;"><u>Accessing Elements:</u></h2>
+<li style="list-style: disc; margin-top: 10px;"><b>Indexing:</b> Access elements using positive or negative indices. Example: <code>names[0]</code> or <code>names[-1]</code></li>
+<li style="list-style: disc; margin-top: 10px;"><b>Slicing:</b> Retrieve sublists using syntax <code>list[start:stop:step]</code>. Example: <code>n[2:5:2]</code></li>
+<li style="list-style: disc; margin-top: 10px;"><b>Looping:</b> Traverse list using <code>for</code> or <code>while</code> loops.</li>
+
+<h2 style="margin: 25px;"><u>Mutability of Lists:</u></h2>
+<p>List items can be changed after creation, which makes them mutable. This is one of the key differences between lists and tuples.</p>
+<div id="image_b"><img src="images/img-66.png" alt=""></div>
+
+<h2><u>Important Methods:</u></h2>
+<div id="image_b"><img src="images/img-67.png" alt=""></div>
+
+<h2><u>Aliasing vs Cloning:</u></h2>
+<li><b>Aliasing:</b> Both variables refer to same list object. <code>y = x</code></li>
+<li><b>Cloning:</b> Create a copy using <code>x[:]</code> or <code>x.copy()</code></li>
+<p>Aliasing causes any change in one reference to reflect in the other. Cloning avoids this by creating a new object.</p>
+
+<h2><u>Operators on Lists:</u></h2>
+<li><b>Concatenation (+):</b> Combine two lists. <code>a + b</code></li>
+<li><b>Repetition (*):</b> Repeat list elements. <code>a * 2</code></li>
+<p>These operators allow you to build and modify lists in flexible ways.</p>
+
+<h2><u>Comparison and Membership:</u></h2>
+<li><b>Comparison:</b> <code>[1,2,3] &lt; [2,2,3]</code> compares element-wise until difference is found.</li>
+<li><b>Membership:</b> <code>20 in x</code> or <code>90 not in x</code> returns True/False.</li>
+<p>Membership checks are useful for conditionals, filtering, and validation tasks.</p>
+
+<h2><u>Nested Lists:</u></h2>
+<p>Lists within lists. Useful for representing matrices or structured data.</p>
+<div id="image_b"><img src="images/img-68.png" alt=""></div>
+
+<h2><u>List Comprehension:</u></h2>
+<p>Create lists in one line using expressions. It provides a concise way to create and transform lists.</p>
+<div id="image_b"><img src="images/img-69.png" alt=""></div>
+
+<p><b>With condition:</b></p>
+<div id="image_b"><img src="images/img-70.png" alt=""></div>
+
+<p>List comprehensions are not only cleaner but also more efficient in performance than traditional loops in many cases.</p>
+
+
+       </div>
+
+
       
        <div id="summary-16">
         <h2>Rough Notebook</h2>
         <textarea name="rough" id="rough" placeholder="write anything in this rough notebook area"></textarea>
 
        </div>
+
 
 
 
